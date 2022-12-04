@@ -1,0 +1,128 @@
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  @media (max-width: 767px) {
+    .menu {
+      display: none;
+    }
+  }
+  
+  
+  
+  .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-left: auto;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+   
+    outline: none;
+  }
+  
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    fill: var(--color-link);
+  }
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #FFFFFF;
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+  }
+  
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: auto;
+  }
+  
+  .mobile__link{
+    display: block;
+    padding:16px 8px;
+    color: var(--color-title);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+  }
+  .mobile__link--current{
+    color: var(--color-link);
+  }
+  .menu-contacts{
+    display: block;
+    text-decoration: none;
+    padding-bottom: 32px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .menu__tel{
+    font-size: 34px;
+    line-height: 1.18;
+    color: var(--color-link);
+    
+  }
+  .menu__mail{
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--color-text);
+  }
+  .menu__socials{
+    display: flex;
+  }
+  .menu__socials--link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--color-link);
+    
+  }
+  .menu__socials--items:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+  .menu__socials--items:not(:first-child) {
+    padding-left: 10px;
+  }

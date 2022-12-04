@@ -1,0 +1,45 @@
+.logo {
+    text-decoration: none;
+    font-family: "raleway", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--color-link);
+    
+    @media screen and (min-width: 480px){
+      font-size: 24px;
+      line-height: 1.17;
+     }
+  
+     @media screen and (min-width: 768px){
+      line-height: 1.17;
+     }
+  
+     @media screen and (min-width: 1200px){
+      font-size: 26px;
+      line-height: 1.19;
+     }
+  }
+  .nav__logo {
+    @media screen and (max-width: 767px){
+      margin-left: 0;
+     }
+    
+    @media screen and (min-width: 768px){
+      margin-right: 88px;
+      margin-left: 0;
+     }
+
+     @media screen and (min-width: 1200px){
+      margin-right: 93px;
+     }
+  }
+  .nav__logo--black {
+    color: #000000;
+  }
+  .footer__logo {
+    display: block;
+    margin-bottom: 28px;
+  }
+  .footer__logo--white {
+    color: #ffffff;
+  }

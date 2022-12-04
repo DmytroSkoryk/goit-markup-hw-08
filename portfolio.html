@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="./index.html" class="logo nav__logo"
+            >Web<span class="nav__logo--black">Studio</span></a
+          >
+          <ul class="nav__list">
+            <li>
+              <a href="./index.html" class="nav__link">Студія</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="nav__link nav__link--current"
+                >Портфоліо</a
+              >
+            </li>
+            <li><a href="#" class="nav__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header__contacts">
+          <li>
+            <a href="mailto:info@devstudio.com" class="header__link">
+              <svg
+                class="header__icon header__icon--envelope"
+                width="16"
+                height="12"
+              >
+                <use href="./images/symbol-defs.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="header__link">
+              <svg
+                class="header__icon header__icon--smartphone"
+                width="10"
+                height="16"
+              >
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#phone_menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <ul class="portfolio__button card-set">
+            <li>
+              <button type="button" class="portfolio__button--sort">Усі</button>
+            </li>
+            <li>
+              <button type="button" class="portfolio__button--sort">
+                Веб-сайти
+              </button>
+            </li>
+            <li>
+              <button type="button" class="portfolio__button--sort">
+                Додатки
+              </button>
+            </li>
+            <li>
+              <button type="button" class="portfolio__button--sort">
+                Дизайн
+              </button>
+            </li>
+            <li>
+              <button type="button" class="portfolio__button--sort">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="portfolio card-set">
+            <li class="portfolio__background card-set-item">
+              <a href="#" class="portfolio__items">
+                <div class="portfolio__thumb">
+                  <img
+                    srcset="
+                      ./images/portfolio/one_354@1x.jpg 354w,
+                      ./images/portfolio/one_370@1x.jpg 370w,
+                      ./images/portfolio/one_450@1x.jpg 450w,
+                      ./images/portfolio/one_708@2x.jpg 708w,
+                      ./images/portfolio/one_740@2x.jpg 740w,
+                      ./images/portfolio/one_900@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width:768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/one_450@1x.jpg"
+                    alt="Технокряк"
+                    loading="lazy"
+                    width="450"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__title">Технокряк</h2>
+                  <p class="portfolio__type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__background card-set-item">
+              <a href="#" class="portfolio__items">
+                <div class="portfolio__thumb">
+                  <img
+                    srcset="
+                      ./images/portfolio/two_354@1x.jpg 354w,
+                      ./images/portfolio/two_370@1x.jpg 370w,
+                      ./images/portfolio/two_450@1x.jpg 450w,
+                      ./images/portfolio/two_708@2x.jpg 708w,
+                      ./images/portfolio/two_740@2x.jpg 740w,
+                      ./images/portfolio/two_900@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width:768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/two_450@1x.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    loading="lazy"
+                    width="450"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nemo provident maiores asperiores ad alias vel ipsa autem
+                      veritatis officiis, tenetur voluptatem, mollitia sed
+                      temporibus magnam possimus inventore dolor quam at?
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__title">
+                    Постер<span lang="en"> Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="portfolio__type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__background card-set-item">
+              <a href="#" class="portfolio__items">
+                <div class="portfolio__thumb">
+                  <img
+                    srcset="
+                      ./images/portfolio/three_354@1x.jpg 354w,
+                      ./images/portfolio/three_370@1x.jpg 370w,
+                      ./images/portfolio/three_450@1x.jpg 450w,
+                      ./images/portfolio/three_708@2x.jpg 708w,
+                      ./images/portfolio/three_740@2x.jpg 740w,
+                      ./images/portfolio/three_900@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width:768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/three_450@1x.jpg"
+                    alt="Ресторан Seafood"
+                    loading="lazy"
+                    width="450"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nemo provident maiores asperiores ad alias vel ipsa autem
+                      veritatis officiis, tenetur voluptatem, mollitia sed
+                      temporibus magnam possimus inventore dolor quam at?
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__title">
+                    Ресторан<span lang="en"> Seafood</span>
+                  </h2>
+                  <p class="portfolio__type">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__background card-set-item">
+              <a href="#" class="portfolio__items">
+                <div class="portfolio__thumb">
+                  <img
+                    srcset="
+                      ./images/portfolio/four_354@1x.jpg 354w,
+                      ./images/portfolio/four_370@1x.jpg 370w,
+                      ./images/portfolio/four_450@1x.jpg 450w,
+                      ./images/portfolio/four_708@2x.jpg 708w,
+                      ./images/portfolio/four_740@2x.jpg 740w,
+                      ./images/portfolio/four_900@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width:768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/four_450@1x.jpg"
+                    alt="Проєкт Prime"
+                    loading="lazy"
+                    width="450"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nemo provident maiores asperiores ad alias vel ipsa autem
+                      veritatis officiis, tenetur voluptatem, mollitia sed
+                      temporibus magnam possimus inventore dolor quam at?
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__title">
+                    Проєкт<span lang="en"> Prime</span>
+                  </h2>
+                  <p class="portfolio__type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__background card-set-item">
+              <a href="#" class="portfolio__items">
+                <div class="portfolio__thumb">
+                  <img
+                    srcset="
+                      ./images/portfolio/five_354@1x.jpg 354w,
+                      ./images/portfolio/five_370@1x.jpg 370w,
+                      ./images/portfolio/five_450@1x.jpg 450w,
+                      ./images/portfolio/five_708@2x.jpg 708w,
+                      ./images/portfolio/five_740@2x.jpg 740w,
+                      ./images/portfolio/five_900@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width:768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/five_450@1x.jpg"
+                    alt="Проєкт Boxes"
+                    loading="lazy"
+                    width="450"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nemo provident maiores asperiores ad alias vel ipsa autem
+                      veritatis officiis, tenetur voluptatem, mollitia sed
+                      temporibus magnam possimus inventore dolor quam at?
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__title">
+                    Проєкт<span lang="en"> Boxes</span>
+                  </h2>
+                  <p class="portfolio__type">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__background card-set-item">
+              <a href="#" class="portfolio__items">
+                <div class="portfolio__thumb">
+                  <img
+                    srcset="
+                      ./images/portfolio/six_354@1x.jpg 354w,
+                      ./images/portfolio/six_370@1x.jpg 370w,
+                      ./images/portfolio/six_450@1x.jpg 450w,
+                      ./images/portfolio/six_708@2x.jpg 708w,
+                      ./images/portfolio/six_740@2x.jpg 740w,
+                      ./images/portfolio/six_900@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width:768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/six_450@1x.jpg"
+                    alt="Видання Limited
+                    Edition"
+                    loading="lazy"
+                    width="450"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nemo provident maiores asperiores ad alias vel ipsa autem
+                      veritatis officiis, tenetur voluptatem, mollitia sed
+                      temporibus magnam possimus inventore dolor quam at?
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="portfolio__type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__background card-set-item">
+              <a href="#" class="portfolio__items">
+                <div class="portfolio__thumb">
+                  <img
+                    srcset="
+                      ./images/portfolio/seven_354@1x.jpg 354w,
+                      ./images/portfolio/seven_370@1x.jpg 370w,
+                      ./images/portfolio/seven_450@1x.jpg 450w,
+                      ./images/portfolio/seven_708@2x.jpg 708w,
+                      ./images/portfolio/seven_740@2x.jpg 740w,
+                      ./images/portfolio/seven_900@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width:768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/seven_450@1x.jpg"
+                    alt="Видання Limited
+                    Edition"
+                    loading="lazy"
+                    width="450"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nemo provident maiores asperiores ad alias vel ipsa autem
+                      veritatis officiis, tenetur voluptatem, mollitia sed
+                      temporibus magnam possimus inventore dolor quam at?
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__title">
+                    Видання<span lang="en"> Limited Edition</span>
+                  </h2>
+                  <p class="portfolio__type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__background card-set-item">
+              <a href="#" class="portfolio__items">
+                <div class="portfolio__thumb">
+                  <img
+                    srcset="
+                      ./images/portfolio/eight_354@1x.jpg 354w,
+                      ./images/portfolio/eight_370@1x.jpg 370w,
+                      ./images/portfolio/eight_450@1x.jpg 450w,
+                      ./images/portfolio/eight_708@2x.jpg 708w,
+                      ./images/portfolio/eight_740@2x.jpg 740w,
+                      ./images/portfolio/eight_900@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width:768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/eight_450@1x.jpg"
+                    alt="Проєкт LAB"
+                    loading="lazy"
+                    width="450"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nemo provident maiores asperiores ad alias vel ipsa autem
+                      veritatis officiis, tenetur voluptatem, mollitia sed
+                      temporibus magnam possimus inventore dolor quam at?
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__title">Проєкт <span>LAB</span></h2>
+                  <p class="portfolio__type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__background card-set-item">
+              <a href="#" class="portfolio__items">
+                <div class="portfolio__thumb">
+                  <img
+                    srcset="
+                      ./images/portfolio/nine_354@1x.jpg 354w,
+                      ./images/portfolio/nine_370@1x.jpg 370w,
+                      ./images/portfolio/nine_450@1x.jpg 450w,
+                      ./images/portfolio/nine_708@2x.jpg 708w,
+                      ./images/portfolio/nine_740@2x.jpg 740w,
+                      ./images/portfolio/nine_900@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width:768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/nine_450@1x.jpg"
+                    alt="Growing Business"
+                    loading="lazy"
+                    width="450"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nemo provident maiores asperiores ad alias vel ipsa autem
+                      veritatis officiis, tenetur voluptatem, mollitia sed
+                      temporibus magnam possimus inventore dolor quam at?
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__wrapper">
+                  <h2 lang="en" class="portfolio__title">Growing Business</h2>
+                  <p class="portfolio__type">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__links">
+            <div>
+              <a href="./index.html" class="logo footer__logo"
+                >Web<span class="footer__logo--white">Studio</span></a
+              >
+              <address class="footer__address">
+                <ul>
+                  <li class="footer__item">
+                    <a
+                      href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      class="footer__map"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="footer__communication"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a href="tel:+380961111111" class="footer__communication"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div>
+              <h3 class="footer__title">приєднуйтесь</h3>
+              <ul class="footer__socials">
+                <li>
+                  <a
+                    class="socials__link socials__link--footer"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="іконка instagram"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/symbol-defs.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="socials__link socials__link--footer"
+                    href="https://twitter.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="іконка twitter"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/symbol-defs.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="socials__link socials__link--footer"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="іконка facebook"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/symbol-defs.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="socials__link socials__link--footer"
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    aria-label="іконка linkedin"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/symbol-defs.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <form class="subscription">
+              <div class="subscription__block">
+                <p class="footer__title">підпишіться на розсилку</p>
+                <input
+                  type="email"
+                  name="e-mail"
+                  placeholder="E-mail"
+                  class="subscription__input"
+                  required
+                />
+              </div>
+              <button type="submit" class="subscription__button">
+                Підписатися
+                <svg class="subscription__icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/symbol-defs.svg#close_menu"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li>
+          <a href="./index.html" class="link mobile__link">Студія</a>
+        </li>
+        <li>
+          <a
+            href="./portfolio.html"
+            class="link mobile__link mobile__link--current"
+            >Портфоліо</a
+          >
+        </li>
+        <li><a href="#" class="link mobile__link">Контакти</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="tel:+380961111111" class="menu-contacts menu__tel"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="menu-contacts menu__mail"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="menu__socials">
+        <li class="menu__socials--items">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="menu__socials--link"
+          >
+            Instagram
+          </a>
+        </li>
+        <li class="menu__socials--items">
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="menu__socials--link"
+          >
+            Twitter
+          </a>
+        </li>
+        <li class="menu__socials--items">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="menu__socials--link"
+          >
+            Facebook</a
+          >
+        </li>
+        <li class="menu__socials--items">
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="menu__socials--link"
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>

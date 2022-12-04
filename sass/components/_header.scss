@@ -1,0 +1,136 @@
+.header {
+    border-bottom: 1px solid #ececec;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav {
+    @media screen and (min-width: 768px){
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+    }
+  
+     @media screen and (min-width: 1200px){
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  .nav__list {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+  }
+
+.nav__list{
+  @media screen and (max-width: 767px){
+    display: none;
+  }
+}
+
+  .nav__link {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--color-title);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
+  
+    &:hover {
+      color: var(--color-link);
+    }
+    &:focus {
+      color: var(--color-link);
+    }      
+  } 
+
+  .nav__link--current {
+    color: var(--color-link);
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--color-link);
+    }
+  }
+  .header__contacts {
+    @media screen and (max-width: 1199px){
+      display: flex;
+      flex-direction: column;
+      padding-top: 21px;
+      padding-bottom: 21px;
+      gap: 10px;
+    }
+     @media screen and (min-width: 1200px){
+      display: flex;
+      gap: 50px;
+     } 
+  }
+  .header__link {
+    display: flex;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 10px;
+    align-items: center;
+    transition-property: color;
+    transition-duration: var(--time-change);
+    transition-timing-function: var(--cubic-bezier);
+
+  &:hover {
+    color: var(--color-link);
+  }
+  &:focus {
+    color: var(--color-link);
+  }
+
+  @media screen and (max-width: 767px){
+    display: none;
+  }
+
+  @media screen and (min-width: 768px){
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+  .header__icon {
+    fill: currentColor;
+    
+  }
+  .header__icon--envelope{
+    @media screen and (max-width: 1199px){
+      width: 14px;
+      height: 10px;
+    }
+  }
+  .header__icon--smartphone{
+    @media screen and (max-width: 1199px){
+      width: 10px;
+      height: 14px;
+    }
+  }
