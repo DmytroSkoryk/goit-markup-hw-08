@@ -14,6 +14,10 @@
         width: 528px;
         height: 581px;
        }
+       @media screen and (max-width: 479px){
+        width: 95%;
+        
+       }
   }
   .modal__button--close {
     position: absolute;

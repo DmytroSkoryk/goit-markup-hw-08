@@ -7,9 +7,10 @@
     margin-bottom: 50px;
     text-align: center;
 
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 1199px){
       font-size: 28px;
       line-height: 1.18;
+      margin-bottom: 30px;
     }
   }
   .clients__items {

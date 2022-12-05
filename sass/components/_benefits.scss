@@ -43,8 +43,9 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-text);
-    @media screen and (min-width: 480px){
-      width: 450px;
+    @media screen and (max-width: 767px){
+      width: 100%;
+      margin-bottom: 30px;
     }
     @media screen and (min-width: 768px){
       width: 354px;
