@@ -108,8 +108,10 @@
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.3);
     background-color: #2f303a;
-    width: 100%;
-  
+    width: 450px;
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
     @media screen and (min-width: 1200px){
       display: flex;
       flex-direction: column;
